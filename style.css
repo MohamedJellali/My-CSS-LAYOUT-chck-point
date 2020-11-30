@@ -11,10 +11,9 @@
 }
 
 
-
 a:link {
     color: blue;
-   
+    text-decoration: none;
 }
 
 li {
@@ -36,9 +35,6 @@ header {
 .header {
     display: flex;
     width: 100%;
- 
-
-
     z-index: 3;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -54,17 +50,61 @@ header {
     margin-right: 15%;
 }
 
+.links_doc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 12px;
+}
+
+.links-a{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    position: relative;
+    left: 110px;
+   
+}
+
 div a {
     margin-right: 10px;
 }
 
+/*drop down list*/
+.dropbtn {
+    background-color: white;
+    color: #747474;
+    font-size: 16px;
+    border: none;    
+  }
 
-/* à revoir main */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: white;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {color: #00b39b;}
+
+
 .main {
-
-    margin-top: 150px;
-   
-   
+    margin-top: 150px; 
 }
 
 
@@ -222,8 +262,12 @@ background:#3d83df;
 .logos svg{
 margin-left: 15px;
 width: 130px;
-
 }
+
+.logos svg:hover {
+    fill: #00ccb1;  
+    }
+
 
 
 .world {
@@ -327,7 +371,6 @@ background: white;
     justify-content: space-around;
 
     border-radius: 10px;
-  
 }
 
 .unique{
@@ -345,7 +388,6 @@ background: white;
     justify-content: space-around;
 
     border-radius: 10px;
-  
 }
 
 .active{
@@ -363,9 +405,7 @@ background: white;
     align-items: center;
     text-align: center;
     justify-content: space-around;
-
     border-radius: 10px;
-  
 }
 
 /*partie3*/
@@ -396,7 +436,8 @@ text-align: center;
 .cities{
     display: flex;
     flex-direction: row;
-    width: 995px;
+    justify-content: space-between;
+    width: 1050px;
     height: 739px;
     flex-wrap: wrap;
     margin-left: 17%;
@@ -406,9 +447,13 @@ text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
-    width: 331px;
-    height: 369px;
+
+    width: 320px;
+    height: 359px;
+}
+
+.city:hover {
+    box-shadow: 0 0 30px rgba(33,33,33,.2); 
 }
 
 .city img{
